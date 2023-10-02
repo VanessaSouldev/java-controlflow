@@ -12,13 +12,14 @@ public class E_Combining_Bonus {
 
             }
         }
+
         int index = 0;
         int accumulator = 0;
 
-        while (index > numbers.length && accumulator <= 400) {
+        while (index < numbers.length && accumulator <= 400){
             accumulator += numbers[index];
             index++;
         }
-        System.out.println(accumulator);
+        System.out.println("Accumulator: " + accumulator);
     }
 }
